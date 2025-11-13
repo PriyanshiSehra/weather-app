@@ -103,7 +103,8 @@
         return;
       }
 
-      const apiUrl = `http://api.weatherapi.com/v1/current.json?key=d64ecb0cdc864eee86b53313251311&q=${city}&aqi=yes`;
+      const apiUrl = `https://api.weatherapi.com/v1/current.json?key=d64ecb0cdc864eee86b53313251311&q=${city}&aqi=yes`;
+//    ^-- Now using https
 
       try {
         const response = await fetch(apiUrl);
